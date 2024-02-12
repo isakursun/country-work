@@ -16,7 +16,7 @@ export const GET_COUNTRY = gql`
   }
 `;
 
-//! kullanılacak değerler
+//! kullanılacak renk değerleri
 export const colorOptions = [
   "#FF5733",
   "#33FF57",

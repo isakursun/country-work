@@ -2,12 +2,14 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import CountryList from "./components/CountryList";
 import { useState } from "react";
 
+//! client oluşturma
 const clientConfig = new ApolloClient({
   uri: "https://countries.trevorblades.com/graphql",
   cache: new InMemoryCache(),
 });
 
 function App() {
+  //! inputa girilen filtre değerini tutma
   const [search,setSearch] = useState<string>('');
   
 

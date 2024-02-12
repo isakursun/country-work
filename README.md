@@ -1,23 +1,3 @@
- #yapılacaklar
- -filtreleme için input ve 2 button koy. --yapıldı
- -verileri çek ve listele. --yapıldı
- -veriyi seçme ve rengini değişme takrar bir veriyi seçince yine farklı bir renk verme seçilen veriye-- yapıldı
- -- filtreleme
- 
+<h1>Country</h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
--kütüphaneler
---tailwind
---apollo client
---
+In this project, information about countries is displayed on the homepage, and the country cards are styled based on certain conditions. The 10th card among the displayed country cards is initially colored. When a card is clicked, its color is removed, and when another country card is clicked, it becomes colored with a different shade. The input field allows filtering countries based on the entered value, creating a list accordingly. If the resulting list has fewer than 10 countries, the last country card remains colored. If there are more than 10 countries, the 10th card becomes colored.
