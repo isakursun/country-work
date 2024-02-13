@@ -2,13 +2,10 @@ import { useQuery } from "@apollo/client";
 import { GET_COUNTRY } from "../constants/constants";
 import { Country, CountryListQuery } from "../constants/types";
 import { useEffect, useState } from "react";
-import { colorOptions } from "../constants/constants";
 import Loader from "./Loader";
+import { Props } from "../constants/types";
+import { getRandomColor } from "../constants/constants";
 
-//! inputtaki değerin tipini burada belirttim
-type Props = {
-  search: string;
-};
 
 const CountryList: React.FC<Props> = ({ search }) => {
   //! kullandığım stateler
@@ -48,11 +45,7 @@ const CountryList: React.FC<Props> = ({ search }) => {
     );
   }, [search]);
 
-  //! oluşturduğum renk kümesinden her tıklamada farklı bir renk gelmesini sağladım
-  const getRandomColor = () => {
-    const randomIndex = Math.floor(Math.random() * colorOptions.length);
-    return colorOptions[randomIndex];
-  };
+  
 
 
   //! tıklanan elemenın rengini değiştirme 

@@ -17,7 +17,7 @@ export const GET_COUNTRY = gql`
 `;
 
 //! kullanılacak renk değerleri
-export const colorOptions = [
+const colorOptions = [
   "#FF5733",
   "#33FF57",
   "#5733FF",
@@ -48,3 +48,9 @@ export const colorOptions = [
   "#8B4569",
   "#2F4F4F",
 ];
+
+//! oluşturduğum renk kümesinden her tıklamada farklı bir renk gelmesini sağladım
+export const getRandomColor = () => {
+  const randomIndex = Math.floor(Math.random() * colorOptions.length);
+  return colorOptions[randomIndex];
+};

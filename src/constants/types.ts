@@ -16,3 +16,8 @@ export interface Country {
 export interface CountryListQuery {
   countries: Country[];
 }
+
+//! inputtaki değerin tipini burada belirttim
+export type Props = {
+  search: string;
+};
